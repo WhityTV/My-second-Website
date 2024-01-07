@@ -1,0 +1,125 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    background: rgba(119, 136, 153, 0.349) none;
+}
+
+.ganzeSeite {
+background: rgba(0, 128, 0, 0.502);
+color: rgba(245, 245, 220, 0.902);
+width: 750px;
+padding: 40px;
+margin-left: auto;
+margin-right: auto;
+}
+
+img{
+    border-radius: 1.5%;
+}
+
+a{
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(119, 136, 153, 0.349) none;
+}
+
+a:hover{
+    color: yellow;
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+    
+}
+
+.navbar{
+    width: 100%;
+    height: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+            
+}
+
+.navbar .links{
+     display: flex;
+     gap: 1rem;
+}
+
+.navbar .toggle_btn{
+    color: rgba(245, 245, 220, 0.902);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 0px;
+    height: 0;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    text-align: left;
+    color: rgba(245, 245, 220, 0.902);
+}
+
+#hero h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+    font-size: 44px;
+    
+}
+
+@media (max-width: 3000px) {
+    .navbar .links,
+    .navbar .toggle_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+    display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+    left: 2rem;
+    width: unset;
+    }
+}
